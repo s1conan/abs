@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  /* 🌫️ Neutral-cool base */
+  --background: #ecf4ff;
+  --foreground: #0f1c2e;
+  --muted: #002c33;
+
+  --blur-color: rgba(244, 247, 251);
+
+  --panel: #ffffff;
+  --panel-strong: #e9eef5;
+  --hero-surface: #eef3f9;
+
+  --border: rgba(15, 28, 46, 0.08);
+  --border-strong: rgba(15, 28, 46, 0.16);
+
+  /* 🔵 Primary */
+  --accent: #2f80ed;
+  --accent-soft: rgba(47, 128, 237, 0.12);
+  --accent-contrast: #ffffff;
+
+  /* 🟢 Secondary */
+  --accent-secondary: #5fbf4a;
+  --accent-secondary-soft: rgba(95, 191, 74, 0.12);
+
+  /* 🔴 Minimal use */
+  --accent-danger: #e53935;
+
+  /* Shadows (clean, subtle) */
+  --shadow: #0f1c2e;
+  --shadow-soft: rgba(15, 28, 46, 0.08);
+  --shadow-strong: rgba(15, 28, 46, 0.14);
+
+  --header-surface: rgba(244, 247, 251, 0.8);
+
+  /* soft blue glow instead of gold */
+  --hero-glow: rgba(47, 128, 237, 0.12);
+  --hero-glow-strong: rgba(47, 128, 237, 0.18);
+  --hero-glow-soft: rgba(233, 238, 245, 0.7);
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1220;
+    --foreground: #eaf1ff;
+    --muted: #ccd7e6;
+
+    --blur-color: rgba(11, 18, 32);
+
+    --panel: #0f1c2e;
+    --panel-strong: #13243a;
+    --hero-surface: #0f1f34;
+
+    --border: rgba(234, 241, 255, 0.08);
+    --border-strong: rgba(234, 241, 255, 0.16);
+
+    /* 🔵 Primary */
+    --accent: #4da3ff;
+    --accent-soft: rgba(77, 163, 255, 0.16);
+    --accent-contrast: #0b1220;
+
+    /* 🟢 Secondary */
+    --accent-secondary: #6ddf5c;
+    --accent-secondary-soft: rgba(109, 223, 92, 0.16);
+
+    /* 🔴 */
+    --accent-danger: #ff5a52;
+
+    --shadow: #020617;
+    --shadow-soft: rgba(2, 6, 23, 0.35);
+    --shadow-strong: rgba(2, 6, 23, 0.5);
+
+    --header-surface: rgba(11, 18, 32, 0.8);
+
+    --hero-glow: rgba(77, 163, 255, 0.14);
+    --hero-glow-strong: rgba(77, 163, 255, 0.2);
+    --hero-glow-soft: rgba(19, 36, 58, 0.7);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-panel: var(--panel);
+  --color-panel-strong: var(--panel-strong);
+  --color-hero-surface: var(--hero-surface);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-shadow: var(--shadow);
+  --color-shadow-soft: var(--shadow-soft);
+  --color-shadow-strong: var(--shadow-strong);
+  --color-header-surface: var(--header-surface);
+  --color-hero-glow: var(--hero-glow);
+  --color-hero-glow-strong: var(--hero-glow-strong);
+  --color-hero-glow-soft: var(--hero-glow-soft);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-display);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Segoe UI",
+    /* Utama untuk pengguna Windows */
+    "Roboto",
+    /* Utama untuk pengguna Android */
+    "Helvetica Neue",
+    /* Utama untuk pengguna Mac/iOS */
+    Arial,
+    /* Cadangan universal */
+    sans-serif;
+  /* Cadangan terakhir jika semua di atas tidak ada */
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--foreground);
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
