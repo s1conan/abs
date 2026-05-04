@@ -88,6 +88,7 @@ export type SiteDictionary = {
       title: string;
       description: string;
       images: string[];
+      pdf?: string;
     }>;
     note: string;
   };
@@ -282,40 +283,41 @@ export const siteContent: Record<Locale, SiteDictionary> = {
       docs: [
         {
           title: "Akta Pendirian Perseroan Terbatas",
-          description:
-            "Akta Notaris Nomor : 02 tanggal 01 Juli 2022",
+          description: "Akta Notaris Nomor : 02 tanggal 01 Juli 2022",
           images: ["/legality/akta-notaris.jpg"],
         },
         {
           title: "Nomor Induk Berusaha (NIB)",
-          description:
-            "Nomor : 0407220038069",
-          images: ["/legality/nib-1.jpg", "/legality/nib-2.jpg"],
+          description: "Nomor : 0407220038069",
+          images: [],
+          pdf: "/legality/nib.pdf",
         },
         {
           title: "Keputusan Menteri Hukum dan HAM (KEMENKUMHAM)",
-          description:
-            "Nomor : AHU-0044227.AH.01.01.Tahun 2022",
+          description: "Nomor : AHU-0044227.AH.01.01.Tahun 2022",
           images: ["/legality/kemen-1.jpg", "/legality/kemen-2.jpg"],
         },
         {
           title: "NPWP Perusahaan",
-          description:
-            "60.089.705.2-301.000",
+          description: "60.089.705.2-301.000",
           images: ["/legality/npwp-1.jpg"],
         },
         {
           title: "Surat Keterangan Penyalur (SKP)",
-          description:
-            "Nomor : 010/LDE/VII/2022",
-          images: ["/legality/skp-1.jpg", "/legality/skp-2.jpg"],
+          description: "Nomor : 016/SKP-LDE/III/2026",
+          images: [],
+          pdf: "/legality/skp.pdf",
+        },
+        {
+          title: "Sertifikat SKP",
+          description: "Nomor : 016/SKP-LDE/III/2026",
+          images: ["/legality/sertifikat-skp.jpg"],
         },
         {
           title: "Surat Keterangan Terdaftar (SKT)",
-          description:
-            "Nomor : S-7303KT/WPJ.03/KP.0203/2022",
+          description: "Nomor : S-7303KT/WPJ.03/KP.0203/2022",
           images: ["/legality/skt-1.jpg", "/legality/skt-2.jpg"],
-        },
+        }
       ],
       note:
         "Bila Anda memerlukan dokumen legalitas lainnya atau memiliki pertanyaan terkait legalitas perusahaan, jangan ragu untuk menghubungi tim legalitas kami melalui halaman kontak.",
@@ -548,34 +550,36 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         },
         {
           title: "Nomor Induk Berusaha (NIB)",
-          description:
-            "Nomor : 0407220038069",
-          images: ["/legality/nib-1.jpg", "/legality/nib-2.jpg"],
+          description: "Nomor : 0407220038069",
+          images: [],
+          pdf: "/legality/nib.pdf",
         },
         {
           title: "Keputusan Menteri Hukum dan HAM (KEMENKUMHAM)",
-          description:
-            "Nomor : AHU-0044227.AH.01.01.Tahun 2022",
+          description: "Nomor : AHU-0044227.AH.01.01.Tahun 2022",
           images: ["/legality/kemen-1.jpg", "/legality/kemen-2.jpg"],
         },
         {
           title: "NPWP Perusahaan",
-          description:
-            "60.089.705.2-301.000",
+          description: "60.089.705.2-301.000",
           images: ["/legality/npwp-1.jpg"],
         },
         {
           title: "Surat Keterangan Penyalur (SKP)",
-          description:
-            "Nomor : 010/LDE/VII/2022",
-          images: ["/legality/skp-1.jpg", "/legality/skp-2.jpg"],
+          description: "Nomor : 016/SKP-LDE/III/2026",
+          images: [],
+          pdf: "/legality/skp.pdf",
+        },
+        {
+          title: "Sertifikat SKP",
+          description: "Nomor : 016/SKP-LDE/III/2026",
+          images: ["/legality/sertifikat-skp.jpg"],
         },
         {
           title: "Surat Keterangan Terdaftar (SKT)",
-          description:
-            "Nomor : S-7303KT/WPJ.03/KP.0203/2022",
+          description: "Nomor : S-7303KT/WPJ.03/KP.0203/2022",
           images: ["/legality/skt-1.jpg", "/legality/skt-2.jpg"],
-        },
+        }
       ],
       note:
         "If you require additional legality documents or have questions regarding the company's legality, please do not hesitate to contact our legality team through the contact page.",
