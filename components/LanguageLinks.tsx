@@ -9,6 +9,7 @@ type LanguageLinksProps = {
   locale: Locale;
   mobile?: boolean;
   label: string;
+  onClick?: () => void;
 };
 
 function buildLocalePath(pathname: string, nextLocale: Locale) {
@@ -30,6 +31,7 @@ export default function LanguageLinks({
   locale,
   mobile = false,
   label,
+  onClick,
 }: LanguageLinksProps) {
   const pathname = usePathname();
   const nextLocale = locale === "id" ? "en" : "id";
@@ -47,6 +49,7 @@ export default function LanguageLinks({
               <Link
                 key={item}
                 href={buildLocalePath(pathname, item)}
+                onClick={onClick}
                 className={`inline-flex min-w-14 items-center justify-center rounded-full px-4 py-2.5 text-sm font-semibold transition active:scale-95 ${
                   active
                     ? "bg-[color:var(--accent)] text-[color:var(--accent-contrast)]"

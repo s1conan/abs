@@ -71,7 +71,7 @@ export default function Gallery({ docs, initialIndex, labels }: GalleryProps) {
                 <iframe
                     src={activeDoc.pdf}
                     title={activeDoc.title}
-                    className="relative h-[60vh] sm:h-[75vh] w-full"
+                    className="relative h-[50vh] sm:h-[65vh] w-full"
                     style={{ border: "none" }}
                 ></iframe>
             );
@@ -82,7 +82,7 @@ export default function Gallery({ docs, initialIndex, labels }: GalleryProps) {
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
-                className="relative w-full h-[80vh]"
+                className="relative w-full h-[70vh]"
             >
                 <Image
                     src={activeDoc.images[activeImageIndex]}
@@ -113,7 +113,7 @@ export default function Gallery({ docs, initialIndex, labels }: GalleryProps) {
                         className="absolute inset-0 cursor-default"
                     />
 
-                    <div className="overflow-y-auto relative z- flex max-h-[98vh] w-full max-w-5xl flex-col rounded-[2rem] border border-white/10 bg-[color:var(--panel)] p-4 shadow-2xl sm:p-6">
+                    <div className="overflow-y-auto relative z- flex max-h-[98vh] w-full max-w-4xl flex-col rounded-[2rem] border border-white/10 bg-[color:var(--panel)] p-4 shadow-2xl sm:p-6">
                         <div className="flex flex-col gap-3 border-b border-[color:var(--border)] pb-4 sm:flex-row sm:items-start sm:justify-between">
                             <div>
                                 <p className="font-display text-sm uppercase tracking-[0.22em] text-[color:var(--accent)]">
@@ -142,7 +142,7 @@ export default function Gallery({ docs, initialIndex, labels }: GalleryProps) {
                                 </button>
                             </div>
                         </div>
-                        <div className="relative mt-4 flex-1 overflow-y-auto max-h-[80vh] rounded-[1.2rem] border border-[color:var(--border)] bg-black/20">
+                        <div className="relative mt-4 flex-1 overflow-y-auto max-h-[70vh] rounded-[1.2rem] border border-[color:var(--border)] bg-black/20">
 
                             {hasMultiplePages && !activeDoc.pdf ? (
                                 <>

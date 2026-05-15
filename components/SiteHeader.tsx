@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, MessageCircleMore } from "lucide-react";
@@ -17,6 +18,14 @@ export default function SiteHeader({
   locale,
   dictionary,
 }: SiteHeaderProps) {
+  const detailsRef = useRef<HTMLDetailsElement>(null);
+
+  const closeMenu = () => {
+    if (detailsRef.current) {
+      detailsRef.current.removeAttribute("open");
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--border)] bg-[color:var(--header-surface)] backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-5 px-4 sm:h-24 sm:px-6 lg:px-8">
@@ -79,12 +88,15 @@ export default function SiteHeader({
           </motion.div>
         </div>
 
-        <details className="group relative xl:hidden">
+        <details ref={detailsRef} className="group relative xl:hidden">
           <summary className="flex list-none items-center gap-2 [&::-webkit-details-marker]:hidden">
             <motion.div whileTap={{ scale: 0.96 }}>
               <Link
                 href={dictionary.ctaHref}
-                onClick={(event) => event.stopPropagation()}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  closeMenu();
+                }}
                 className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[color:var(--accent)] px-4 py-3 text-sm font-semibold text-[color:var(--accent-contrast)] sm:px-5 sm:py-3.5"
               >
                 <MessageCircleMore size={15} />
@@ -103,6 +115,7 @@ export default function SiteHeader({
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={closeMenu}
                   className="flex items-center justify-between rounded-[1.2rem] border border-transparent bg-[color:var(--background)] px-4 py-3 text-sm font-medium text-[color:var(--foreground)] transition duration-200 active:scale-98"
                 >
                   {item.label}
@@ -115,6 +128,7 @@ export default function SiteHeader({
                 locale={locale}
                 mobile
                 label={dictionary.languageLabel}
+                onClick={closeMenu}
               />
             </div>
           </div>

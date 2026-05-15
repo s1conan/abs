@@ -6,7 +6,13 @@
   --foreground: #0f1c2e;
   --muted: #002c33;
 
-  --blur-color: rgba(244, 247, 251);
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 16px;
+  }
 
   --panel: #ffffff;
   --panel-strong: #e9eef5;
