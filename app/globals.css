@@ -6,6 +6,8 @@
   --foreground: #0f1c2e;
   --muted: #002c33;
 
+  --blur-color: rgba(236, 244, 255);
+
   .glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
