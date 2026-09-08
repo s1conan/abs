@@ -329,21 +329,13 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         "Jaringan distribusi kami didukung oleh kolaborasi dengan berbagai rekanan yang memiliki peran penting dalam memastikan layanan distribusi bahan bakar industri yang efisien dan dapat diandalkan.",
       partnersitems: [
         {
-          company: "PT Raja Samudra Jaya",
-          description: "Area Kerja : PT Kalidareh Prima Mandiri, Bayung Lencir, Sumatera Selatan",
+          company: "PT Bunga Sarana Jaya",
+          description: "Area Kerja : Sumbagsel",
         },
         {
-          company: "PT Putri Melati Asih",
-          description: "Area Kerja : PLTU Ombilin, Sawahlunto, Padang, Sumatera Barat",
-        },
-        {
-          company: "PT Soga Teknik Utama",
-          description: "Area Kerja : PT Pupuk Sriwidjaja, Palembang, Sumatera Selatan",
-        },
-        {
-          company: "PT Energate Prima Indonesia",
-          description: "Desa Prambatan, Kec. Abab, Kabupaten PALI, Sumatera Selatan",
-        },
+          company: "PT Lautan Dewa Energy",
+          description: "Area Kerja : Sumbagsel"
+        }
       ],
       note:
         "Rekanan dapat berupa perusahaan logistik, vendor bahan bakar, atau mitra distribusi yang memperkuat layanan perusahaan.",
@@ -369,7 +361,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         "Jangan ragu untuk menghubungi kami untuk pertanyaan, penawaran, atau kebutuhan distribusi bahan bakar industri Anda. Tim kami siap membantu dengan respons cepat dan layanan yang profesional.",
       info: [
         { label: "Telepon", value: "+62 812 7179 9190" },
-        { label: "Email", value: "anugerah.buanasriwijaya75@gmail.com" },
+        { label: "Email", value: "purchasing@anugerahbuanasriwijaya.co.id" },
         { label: "Alamat", value: "JI. Bayam No. 1702 RT. 021 RW. 009 Kel. 9 Ilir Kec. Ilir Timur III Palembang, Sumatera Selatan 30113" },
         { label: "Wilayah Layanan", value: "Sumatera Selatan dan Sumatera Barat" },
       ],
@@ -591,21 +583,13 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         "Our distribution network is supported by collaborations with various partners who play a crucial role in ensuring efficient and reliable industrial fuel distribution services.",
       partnersitems: [
         {
-          company: "PT Raja Samudra Jaya",
-          description: "Working Area : PT Kalidareh Prima Mandiri, Bayung Lencir, Sumatera Selatan",
+          company: "PT Bunga Sarana Jaya",
+          description: "Area Kerja : Sumbagsel",
         },
         {
-          company: "PT Putri Melati Asih",
-          description: "Working Area : PLTU Ombilin, Sawahlunto, Padang, Sumatera Barat",
-        },
-        {
-          company: "PT Soga Teknik Utama",
-          description: "Working Area : PT Pupuk Sriwidjaja, Palembang, Sumatera Selatan",
-        },
-        {
-          company: "PT Energate Prima Indonesia",
-          description: "Working Area : Desa Prambatan, Kec. Abab, Kabupaten PALI, Sumatera Selatan",
-        },
+          company: "PT Lautan Dewa Energy",
+          description: "Area Kerja : Sumbagsel"
+        }
       ],
       note:
         "Partners can include logistics companies, fuel vendors, or distribution partners that strengthen the company's services.",
@@ -631,7 +615,7 @@ export const siteContent: Record<Locale, SiteDictionary> = {
         "Don't hesitate to contact us for inquiries, offers, or your industrial fuel distribution needs. Our team is ready to assist with quick responses and professional service.",
       info: [
         { label: "Phone", value: "+62 812 7179 9190" },
-        { label: "Email", value: "anugerah.buanasriwijaya75@gmail.com" },
+        { label: "Email", value: "purchasing@anugerahbuanasriwijaya.co.id" },
         { label: "Address", value: "JI. Bayam No. 1702 RT. 021 RW. 009 Kel. 9 Ilir Kec. Ilir Timur III Palembang, Sumatera Selatan 30113" },
         { label: "Coverage", value: "South Sumatra and West Sumatra" },
       ],
