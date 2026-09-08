@@ -31,10 +31,13 @@ export default async function CustomersPage({
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
         <div className="grid gap-5 md:grid-cols-2">
           {content.items.map((item, index) => (
-            <MotionReveal key={item} delay={index * 0.06}>
-              <div className="rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--panel)] px-5 py-5 shadow-[0_20px_60px_var(--shadow-soft)] transition duration-200 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_28px_80px_var(--shadow-strong)]">
-                <p className="text-sm leading-7 text-[color:var(--muted)] sm:text-base">
-                  {item}
+            <MotionReveal key={item.name} delay={index * 0.06} className="h-full">
+              <div className="flex h-full flex-col rounded-[1.6rem] border border-[color:var(--border)] bg-[color:var(--panel)] px-5 py-5 shadow-[0_20px_60px_var(--shadow-soft)] transition duration-200 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_28px_80px_var(--shadow-strong)]">
+                <h2 className="font-display text-3xl font-semibold text-[color:var(--foreground)]">
+                  {item.name}
+                </h2>
+                <p className="mt-auto pt-5 text-sm leading-7 text-[color:var(--muted)] sm:text-base">
+                  {item.location}
                 </p>
               </div>
             </MotionReveal>
