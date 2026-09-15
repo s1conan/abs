@@ -51,7 +51,7 @@ export default function SiteFooter({
 
         <div className="flex flex-col gap-2 border-t border-[color:var(--border)] pt-6 text-sm text-[color:var(--muted)] md:flex-row md:items-center md:justify-between">
           <p>Copyright © 2022 - PT. Anugerah Buana Sriwijaya - All Rights Reserved</p>
-          <p className="text-white">Conan - s1conan@yahoo.com</p>
+          <p className="text-blue-500 hover:text-blue-700"><a href="https://webdevportfolio-cakra.vercel.app/" target="_blank" rel="noopener noreferrer">Author</a></p>
         </div>
       </div>
     </footer>
